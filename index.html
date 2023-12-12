@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Prastha Pradipta Purusa">
+    <title>@_prastha.p- 71230987- Personal Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>UKDW INFORMATIKA PRASTHA</h1>
+    </header>
+
+    <h2><b>INI Saya</b></h2>
+    
+    <section id="foto">
+        <div style="display: flex; align-items: top;">
+            <img src="jirrrrr.jpg" alt="Nama saya adalah Prastha Pradipta Purusa dan ini adalah foto saya" witdh = "100" width="250"> 
+            <section id="tentang-saya">
+                <p><b>Prastha Pradipta Purusa</b></p>
+                <p>@_prastha.p</p>
+                <p>Jogja, DIY, Indonesia</p>
+                <p>Duta Wacana Christian University</p>
+                <h2>Kemampuan</h2>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>C</li>
+                  <li>PYTHON</li>
+                </ul>
+                <button id="tombolGantiWarna">Ganti warna random</button>
+            </section>
+            <section>
+                    <p>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Dibuka Ya!</a> 
+                    <a href="https://www.instagram.com/_prastha.p/">Instagram Saya</a>
+                </p>
+            </section>
+            </div>
+
+    <p>
+        
+    </p>
+
+    <footer>
+        <p>OKCANNNN</p>
+    </footer>
+
+    <script>
+        const bodyElement = document.body;
+
+        function gantiWarnaRandom() {
+            const warnaList = ["#ff0000", "#0000ff", "#00ff00", "#ffffff"];
+            const randomIndex = Math.floor(Math.random() * warnaList.length);
+            const warnaRandom = warnaList[randomIndex];
+            bodyElement.style.backgroundColor = warnaRandom;
+        }
+
+        const tombolGantiWarna = document.getElementById("tombolGantiWarna");
+        tombolGantiWarna.addEventListener("click", gantiWarnaRandom);
+    </script>
+</body>
+</html>
